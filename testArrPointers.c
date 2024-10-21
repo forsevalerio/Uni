@@ -2,8 +2,13 @@
 #include <stdlib.h>
 
 int main() {
-    int arr[3] = {1,2,3};
-    printf("%d \n", arr[0]);
-    printf("%d", *(2+arr));
+    int *mem, *mammt;
+    mem = (int*)malloc(10*sizeof(int));
+    mammt = mem;
+    free(mem);
+    free(mammt);
+    char* stringa = (char*)malloc(0xFF); // stessa cosa d char stringa[0xFF]
+    stringa = "ciao";
+
     return 0; 
 }
