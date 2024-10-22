@@ -9,6 +9,6 @@ int main() {
     free(mammt);
     char* stringa = (char*)malloc(0xFF); // stessa cosa d char stringa[0xFF]
     stringa = "ciao";
-
+    printf("%s", stringa);
     return 0; 
 }
